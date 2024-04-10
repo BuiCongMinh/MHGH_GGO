@@ -1,0 +1,146 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  behavior: smooth;
+}
+
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Abril Fatface, sans-serif;
+  padding: 30px 0;
+  text-align: center;
+  font-size: clamp(35px, 5vw, 90px);
+}
+
+.content {
+  padding: 0 20vw;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.go-top-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  border-radius: 3px 0px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  background: #f6a628;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* sideBar  */
+
+.sideBar .menuApp {
+  position: fixed;
+  width: 186px;
+  height: 449px;
+  right: 0px;
+  bottom: 50%;
+  transform: translate(150px, 50%);
+  background: url(../img/twentyseventeen-chill.png);
+  background-position: 0 -1014px;
+  transition: transform 0.3s;
+  list-style: none;
+  cursor: pointer;
+}
+
+.menuApp li {
+  /* margin-bottom: 8px; */
+}
+
+.menuApp li {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 10px;
+  border: 0;
+}
+
+.menuApp li a {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../img/twentyseventeen-chill.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+
+.menuApp .app_mobile a {
+  width: 126px;
+  height: 50px;
+}
+.menuApp .app_mobile .Adroid {
+  background-position: -331px -186px;
+}
+.menuApp .app_mobile .IOS {
+  background-position: -79px -186px;
+}
+.menuApp .app_mobile .APK {
+  background-position: -252px -350px;
+}
+
+.menuApp .app_AddCard {
+  margin-left: 47px;
+}
+
+.menuApp .app_AddCard .addCard {
+  width: 133px;
+  height: 73px;
+  background-position: 0 -538px;
+}
+
+.menuApp .app_Home {
+  display: flex;
+  gap: 10px;
+
+}
+
+.menuApp .app_Home a{
+  width: 59px;
+  height: 44px;
+}
+.menuApp .app_Home a:hover{
+  filter: brightness(1.5);
+}
+
+.menuApp .app_Home .home {
+  background-position: -54px -84px;
+}
+.menuApp .app_Home .fanpage{
+  background-position: -419px 0;
+}
+
+.menuApp .app_Logo{
+  width: 124px;
+  height: 124px;
+  overflow: hidden;
+}
+
+.menuApp .app_Logo .customLogo { 
+  text-indent: unset;
+  background: none;
+}
+
+.menuApp .app_Logo .customLogo img{
+  max-height: 115px;
+  width: 100%;
+}
+
