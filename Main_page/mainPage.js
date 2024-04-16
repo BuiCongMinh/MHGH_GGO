@@ -9,7 +9,6 @@ window.addEventListener("scroll", checkHeight);
 function checkHeight() {
   if (window.scrollY > 400) {
     goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
-
     sideBar.style.transform = "translateY(50%)";
     sideBar.style.backgroundPosition = "-186px -1014px";
     sideBar.classList.add("show");
@@ -17,7 +16,6 @@ function checkHeight() {
     sideBar.style.transform = "translateY(50%) translateX(150px)";
     sideBar.style.backgroundPosition = "0 -1014px";
     sideBar.classList.remove("show");
-
     goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
   }
 }
@@ -46,12 +44,16 @@ reload.addEventListener("click", () => {
 
 itemTitles.forEach((itemTitle, index) => {
   itemTitle.addEventListener("click", () => {
-    document.querySelector(".sector2  .right .title .active")?.classList.remove("active");
+    document
+      .querySelector(".sector2  .right .title .active")
+      ?.classList.remove("active");
     itemTitle.classList.add("active");
-  
-    document.querySelector('.sector2 .content .active')?.classList.remove("active");
+
+    document
+      .querySelector(".sector2 .content .active")
+      ?.classList.remove("active");
     contents[index].classList.add("active");
-    
-    });
+  });
 });
 
+// responesive

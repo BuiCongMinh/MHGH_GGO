@@ -13,7 +13,22 @@
   <body>
     <div id="App">
       <div class="header">
-        <div class="container">
+        <div class="contaner-mobile">
+          <div class="toggle-menu" >
+            <i class="fa-solid fa-bars true active"></i>
+            <i class="fa-solid fa-x false  "></i>
+          </div>
+          <ul class="menu-app">
+            <li class="install-mobile app-install">
+              <a href="../TinTuc/TinTuc.html"></a>
+            </li>
+            <li class="install-mobile app-paycard">
+              <a href="../TinTuc/TinTuc.html"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container hide">
           <div class="item active">
             <a href="#">
               <i class="fa-solid fa-house"></i>
@@ -29,12 +44,13 @@
             <a href="../TinTuc/TinTuc.html"> Hướng Dẫn </a>
           </div>
           <div class="item">
-            <a href="https://mhgh.ggo.vn/category/tin-tuc/"> Fanpage </a>
+            <a href="https://www.facebook.com/monghuyengiangho"> Fanpage </a>
           </div>
           <div class="item">
-            <a href="https://mhgh.ggo.vn/category/tin-tuc/"> Group </a>
+            <a href="https://www.facebook.com/groups/mongdaihiep"> Group </a>
           </div>
         </div>
+
       </div>
 
       <div class="sector1">
@@ -103,6 +119,11 @@
       </div>
 
       <div class="sector2">
+        <div class="title">
+          <div class="container">
+            <h3>sự kiện mới</h3>
+          </div>
+        </div>
         <div class="clear-fix">
           <div class="container">
             <div class="left">
@@ -110,7 +131,7 @@
                 <a
                   href="https://mhgh.ggo.vn/khoi-dong-giai-dau-quy-mao-thien-vuong/"
                 >
-                  <img src="../img/sector2/GiaiDau.png" alt="" />
+                  <img src="../img/sector2/responesive/giadau-0x0.jpg" alt="" />
                 </a>
               </div>
             </div>
@@ -332,13 +353,18 @@
           <div class="container">
             <div class="row">
               <div class="social">
-                <a href="https://www.facebook.com/monghuyengiangho">
+                <a target="_blank" href="https://www.facebook.com/monghuyengiangho">
                   <img src="../img/footer/f-btn-1.png" alt="" />
                 </a>
               </div>
               <div class="social">
-                <a href="https://www.facebook.com/monghuyengiangho">
+                <a target="_blank" href="https://www.facebook.com/monghuyengiangho">
                   <img src="../img/footer/f-btn-2.png" alt="" />
+                </a>
+              </div>
+              <div class="social social-youtube">
+                <a target="_blank" href="https://www.youtube.com/channel/UCHoPbdC92G8pWVigmYrsxAg">
+                  <img src="../img/footer/f-btn-3.png" alt="" />
                 </a>
               </div>
             </div>
@@ -408,7 +434,7 @@
             ></a>
           </li>
           <li class="app_Logo">
-            <a class="customLogo reload">
+            <a class="customLogo reload" href="#">
               <img src="../img/side_bar/logo.png" alt="">
             </a>
           </li>
@@ -419,4 +445,5 @@
     </div>
   </body>
   <script src="./mainPage.js"></script>
+  <script src="./responesiveJS/mainPageReponesive.js"></script>
 </html>
