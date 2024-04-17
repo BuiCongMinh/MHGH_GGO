@@ -15,7 +15,7 @@
   </head>
   <body>
     <div id="App">
-      <div class="header">
+      <div class="header" id="header">
         <div class="contaner-mobile">
           <div class="toggle-menu" >
             <i class="fa-solid fa-bars true active"></i>
@@ -356,7 +356,10 @@
         </div>
       </div>
 
-      <button class="go-top-btn">
+      <button 
+        class="go-top-btn"
+        onclick="scrollSmoothlyToBottom('header')"
+      >
         <i class="fa-solid fa-chevron-up"></i>
         Top
       </button>

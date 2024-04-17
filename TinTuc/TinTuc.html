@@ -13,21 +13,36 @@
   <body>
     <div id="App">
 
-      <div class="header">
-        <div class="container">
-          <div class="item ">
-            <a href="../Main_page/mainPage.html">
+      <div class="header" id="header">
+        <div class="contaner-mobile">
+          <div class="toggle-menu" >
+            <i class="fa-solid fa-bars true active"></i>
+            <i class="fa-solid fa-x false  "></i>
+          </div>
+          <ul class="menu-app">
+            <li class="install-mobile app-install">
+              <a href="../TinTuc/TinTuc.html"></a>
+            </li>
+            <li class="install-mobile app-paycard">
+              <a href="../TinTuc/TinTuc.html"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="container hide">
+          <div class="item active">
+            <a href="#">
               <i class="fa-solid fa-house"></i>
             </a>
           </div>
-          <div class="item active">
-            <a href=""> Tin Tức </a>
+          <div class="item">
+            <a href="../TinTuc/TinTuc.html"> Tin Tức </a>
           </div>
           <div class="item">
-            <a href="../Main_page/mainPage.html"> Sự Kiện </a>
+            <a href="../TinTuc/TinTuc.html"> Sự Kiện </a>
           </div>
           <div class="item">
-            <a href="../Main_page/mainPage.html"> Hướng Dẫn </a>
+            <a href="../TinTuc/TinTuc.html"> Hướng Dẫn </a>
           </div>
           <div class="item">
             <a href="https://www.facebook.com/monghuyengiangho"> Fanpage </a>
@@ -36,6 +51,7 @@
             <a href="https://www.facebook.com/groups/mongdaihiep"> Group </a>
           </div>
         </div>
+
       </div>
 
       <div class="sector1">
@@ -322,13 +338,13 @@
                 <a href="" class="">3</a>
               </li>
               <li>
-                <a href="" class="">4</a>
+                <a href="" class="hide">4</a>
               </li>
               <li>
-                <a href="" class="">5</a>
+                <a href="" class="hide">5</a>
               </li>
               <li>
-                <a href="" class="">6</a>
+                <a href="" class="hide">6</a>
               </li>
               <li>
                 <a href="" class="">...</a>
@@ -419,6 +435,11 @@
                   <img src="../img/footer/f-btn-2.png" alt="" />
                 </a>
               </div>
+              <div class="social social-youtube">
+                <a target="_blank" href="https://www.youtube.com/channel/UCHoPbdC92G8pWVigmYrsxAg">
+                  <img src="../img/footer/f-btn-3.png" alt="" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -438,4 +459,5 @@
     </div>
   </body>
   <script src="./TinTuc.js"></script>
+  <script src="./responesiveJS/mainPageReponesive.js"></script>
 </html>

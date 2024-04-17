@@ -1,3 +1,9 @@
+// scrolling smooth button
+const scrollSmoothlyToBottom = (to) => {
+  $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 1000);
+};
+
+// owl caruosel libarry 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
@@ -35,13 +41,6 @@ sideBar.addEventListener("click", () => {
   }
 });
 
-goTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-
 reload.addEventListener("click", () => {
   window.location.reload();
 });
@@ -76,7 +75,7 @@ $('.owl-carousel').owlCarousel({
     1000:{
         items:1,
         nav:true,
-        loop:false
+        loop:true
     }
 }
 })
