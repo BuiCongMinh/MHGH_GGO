@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
+
 const goTopBtn = document.querySelector(".go-top-btn");
 const reload = document.querySelector(".reload");
 const sideBar = document.querySelector(".sideBar .menuApp");
@@ -56,4 +60,24 @@ itemTitles.forEach((itemTitle, index) => {
   });
 });
 
-// responesive
+// slider
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:true,
+  items:1,
+  dots:true,autoplay:true,
+  autoplayTimeout:5000,
+  autoplayHoverPause:true,
+  autoplaySpeed:3000,
+  navSpeed:1500,
+  dotsSpeed:1500,
+  responsive:{
+    1000:{
+        items:1,
+        nav:true,
+        loop:false
+    }
+}
+})
+

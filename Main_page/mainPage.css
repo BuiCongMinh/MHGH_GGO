@@ -317,21 +317,66 @@ html {
   display: flex;
 }
 
-.sector2 .container .left .side {
-  width: 575.578px;
-  padding: 2px;
-
-  background: black;
+.sector2 .container .left {
+  width: 45vw;
+  cursor: pointer;
 }
-
-.sector2 .container .left .side a {
+.sector2 .container .left .owl-carousel img {
+  height: 30vw;
+}
+.sector2 .container .left .owl-carousel .owl-dots {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1.5vw;
+}
+.sector2 .container .left .owl-carousel .owl-dots button {
+  width: 13px;
+  height: 13px;
+  margin: 13px 8px;
+  background: #ffce58;
+  border-radius: 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 0px solid #e2b871;
+}
+.sector2 .container .left .owl-carousel .owl-dots button.active {
+  width: 20px;
+  height: 20px;
+  background: #862c20;
+  border: 3px solid wheat;
+  padding: 30px;
 }
 
-.sector2 .container .left a img {
+.sector2 .container .left .owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sector2 .container .left .owl-carousel .owl-nav button {
+  background: url(../img/sector2/bg_direction_nav.png);
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  box-shadow: none !important;
+  display: block;
+  background-color: transparent;
+
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: opacity 0.25s ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.sector2 .container .left .owl-carousel .owl-nav .owl-next {
+  background-position: right 0;
+  text-align: left;
 }
 
 .sector2 .container .right {
@@ -520,7 +565,9 @@ html {
 }
 
 /* sideBar  */
-
+.sideBar {
+  z-index: 9999;
+}
 .sideBar .menuApp {
   position: fixed;
   width: 186px;
@@ -668,12 +715,12 @@ html {
   }
 
   .container {
-    padding: 0px 15px;
+    padding: 0px 50px;
     margin: 0px;
   }
 
   /* sector1  */
-  .sector1{
+  .sector1 {
     background-size: 200vw;
     height: 63vw;
   }
@@ -684,7 +731,7 @@ html {
   .sector1 .clear-fix .container .rechargeCard {
     display: none;
   }
-  .sector1 .clear-fix .container{
+  .sector1 .clear-fix .container {
     margin: 0vw 0vw;
   }
   .sector1 .clear-fix .container .downLoad {
@@ -697,8 +744,7 @@ html {
 
   /* sector2  */
   .sector2 {
-    padding-top:3vw ;
-    
+    padding-top: 3vw;
   }
   .sector2 .title {
     background: none;
@@ -706,6 +752,9 @@ html {
   .sector2 .container {
     display: flex;
     flex-direction: column;
+  }
+  .sector2 .container .left {
+    width: 100%;
   }
   .sector2 h3 {
     display: flex;
@@ -718,6 +767,13 @@ html {
   .sector2 .container .right {
     margin-bottom: 3vw;
   }
+  .owl-stage-outer {
+    height: 50vw;
+  }
+
+  .sector2 .container .left .owl-carousel img{
+    height: 50vw;
+  }
 
   /* footer  */
   .footer .row .social a img {
@@ -726,10 +782,7 @@ html {
   .footer .row .social.social-youtube {
     display: flex;
   }
-  
 }
-
-
 
 @media screen and (max-width: 769px) {
   .header {
@@ -814,6 +867,4 @@ html {
   .footer .row .social.social-youtube {
     display: flex;
   }
-
 }
-
