@@ -3,12 +3,14 @@ const scrollSmoothlyToBottom = (to) => {
   $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 1000);
 };
 
-// owl caruosel libarry 
+// owl caruosel libarry
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
 
-const itemContent = document.querySelectorAll('.sector2 .right .content .itemContent');
+const itemContents = document.querySelectorAll(
+  ".sector2 .right .content .itemContent"
+);
 const goTopBtn = document.querySelector(".go-top-btn");
 const reload = document.querySelector(".reload");
 const sideBar = document.querySelector(".sideBar .menuApp");
@@ -61,31 +63,34 @@ itemTitles.forEach((itemTitle, index) => {
 });
 
 // slider
-$('.owl-carousel').owlCarousel({
-  loop:true,
-  margin:10,
-  nav:true,
-  items:1,
-  dots:true,autoplay:true,
-  autoplayTimeout:5000,
-  autoplayHoverPause:true,
-  autoplaySpeed:3000,
-  navSpeed:1500,
-  dotsSpeed:1500,
-  responsive:{
-    1000:{
-        items:1,
-        nav:true,
-        loop:true
-    }
-}
-})
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  items: 1,
+  dots: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  autoplaySpeed: 3000,
+  navSpeed: 1500,
+  dotsSpeed: 1500,
+  responsive: {
+    1000: {
+      items: 1,
+      nav: true,
+      loop: true,
+    },
+  },
+});
 
-
-// click content-item change page 
-itemContent.forEach(i=>{
+itemContents.forEach(i=>{
   i.addEventListener('click',()=>{
-    window.location.href = '../TinTuc_DeTail/DetailTinTuc.html'
+    window.location.href = '../TinTuc_DeTail/DetailTinTuc.html';
   })
 })
 
+//Event change page
+const changePage = (url) => {
+  window.location.href = url;
+};

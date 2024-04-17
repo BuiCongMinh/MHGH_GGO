@@ -49,7 +49,6 @@ itemTitles.forEach((itemTitle, index) => {
     });
 });
 
-
 // click content-item change page 
 itemContent.forEach(i=>{
   i.addEventListener('click',()=>{
