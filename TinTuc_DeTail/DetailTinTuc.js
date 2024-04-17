@@ -3,8 +3,7 @@ const goTopBtn = document.querySelector(".go-top-btn");
 const itemTitles = document.querySelectorAll(".item_title");
 const contents = document.querySelectorAll(".content-body");
 
-const itemContent = document.querySelectorAll('.sector2 .right .content .itemContent');
-
+console.log(12);
 // scrolling smooth button
 const scrollSmoothlyToBottom = (to) => {
   $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 1000);
@@ -48,11 +47,3 @@ itemTitles.forEach((itemTitle, index) => {
     contents[index].classList.add("active");
     });
 });
-
-
-// click content-item change page 
-itemContent.forEach(i=>{
-  i.addEventListener('click',()=>{
-    window.location.href = '../TinTuc_DeTail/DetailTinTuc.html'
-  })
-})

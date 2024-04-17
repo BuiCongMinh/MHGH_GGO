@@ -8,6 +8,7 @@ $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
 
+const itemContent = document.querySelectorAll('.sector2 .right .content .itemContent');
 const goTopBtn = document.querySelector(".go-top-btn");
 const reload = document.querySelector(".reload");
 const sideBar = document.querySelector(".sideBar .menuApp");
@@ -78,5 +79,13 @@ $('.owl-carousel').owlCarousel({
         loop:true
     }
 }
+})
+
+
+// click content-item change page 
+itemContent.forEach(i=>{
+  i.addEventListener('click',()=>{
+    window.location.href = '../TinTuc_DeTail/DetailTinTuc.html'
+  })
 })
 

@@ -1,0 +1,590 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,800;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  behavior: smooth;
+  transition: all 0.3s;
+}
+
+#App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0vw 12vw;
+}
+
+/* header  */
+#App .header {
+  height: 66px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../img/header/header_background.jpg");
+}
+
+.header .container {
+  gap: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 0px 15px;
+  margin: 0px auto;
+}
+
+.header .container .item {
+  height: 100%;
+  min-width: 6vw;
+  padding: 0px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .container .item:hover {
+  background: orange;
+  filter: brightness(110%);
+  color: #fffffffd;
+}
+
+.header .container .item.active {
+  background: orange;
+  filter: brightness(110%);
+  color: #fffffffd;
+}
+
+.header .container .item a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color: #f6e29e;
+  text-decoration: none;
+}
+.header .contaner-mobile {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2% 3%;
+}
+
+.header .contaner-mobile i {
+  color: white;
+  font-size: 40px;
+}
+
+.header .contaner-mobile .true {
+  display: none;
+}
+.header .contaner-mobile .false {
+  display: none;
+}
+.header .contaner-mobile .active {
+  display: flex;
+}
+
+.header .menu-app {
+  display: flex;
+  gap: 1vh;
+}
+
+.header .menu-app .install-mobile {
+  width: 126px;
+  height: 48px;
+  list-style: none;
+  background: url(../img/twentyseventeen-chill.png);
+}
+.header .menu-app .app-install {
+  background-position: 0 -350px;
+}
+.header .menu-app .app-install:hover {
+  background-position: -298px -84px;
+}
+.header .menu-app .app-paycard {
+  background-position: -457px -186px;
+}
+.header .menu-app .app-paycard:hover {
+  background-position: -210px -268px;
+}
+
+.header .menu-app .install-mobile a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* btn back-to-top  */
+.go-top-btn {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  border-radius: 3px 0px;
+  transition: transform 0.5s;
+  cursor: pointer;
+  height: 50px;
+  width: 70px;
+  background: #f6a628;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.go-top-btn:hover {
+  color: black;
+}
+
+/* sector1  */
+.sector1 {
+  background: #9c3121;
+  background-size: 150%;
+  background-position: center top -5vh;
+  height: 130px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* .sector1 .clear-fix { */
+.clear-fix {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sector1 .clear-fix .container {
+  height: 10px;
+  background: none;
+  margin-bottom: 12px;
+  display: flex;
+}
+
+.sector1 .clear-fix .container .downLoad {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sector1 .clear-fix .container .downLoad img {
+  max-height: 100px;
+  cursor: pointer;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor {
+  margin-left: 12px;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor .title {
+  margin-bottom: 10px;
+  color: #f6e7be;
+  font-size: 17px;
+}
+
+.menuApp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 12px;
+}
+.menuApp .appItem {
+  background: url(../img/sector1/twentyseventeen-chill.png);
+  text-decoration: none;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor .menuApp .appItem {
+  width: 126px;
+  height: 48px;
+}
+
+.sector1
+  .clear-fix
+  .container
+  .downLoad
+  .headInfor
+  .menuApp
+  .appItem#Android_App {
+  background-position: -331px -186px;
+}
+.sector1
+  .clear-fix
+  .container
+  .downLoad
+  .headInfor
+  .menuApp
+  .appItem#Android_App:hover {
+  background-position: -336px -268px;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor .menuApp .appItem#IOS_App {
+  background-position: -79px -186px;
+}
+.sector1
+  .clear-fix
+  .container
+  .downLoad
+  .headInfor
+  .menuApp
+  .appItem#IOS_App:hover {
+  background-position: -172px -84px;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor .menuApp .appItem#APK_App {
+  background-position: -252px -350px;
+}
+.sector1
+  .clear-fix
+  .container
+  .downLoad
+  .headInfor
+  .menuApp
+  .appItem#APK_App:hover {
+  background-position: -84px -268px;
+}
+
+.sector1 .clear-fix .container .downLoad .headInfor .menuApp .appItem#NOX_App {
+  background-position: -326px -135px;
+}
+.sector1
+  .clear-fix
+  .container
+  .downLoad
+  .headInfor
+  .menuApp
+  .appItem#NOX_App:hover {
+  background-position: -74px -135px;
+}
+
+.sector1 .clear-fix .container .rechargeCard {
+  margin-left: 12px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.rechargeCard .menuApp .appItem {
+  width: 105px;
+  height: 106px;
+}
+
+.rechargeCard .menuApp .appItem#PayCard {
+  background-position: -105px -432px;
+}
+.rechargeCard .menuApp .appItem#PayCard:hover {
+  background-position: -372px -1014px;
+}
+
+.rechargeCard .menuApp .appItem#Guide {
+  background-position: -371px -538px;
+}
+.rechargeCard .menuApp .appItem#Guide:hover {
+  background-position: -315px -432px;
+}
+
+.rechargeCard .menuApp .appItem#Code {
+  background-position: -420px -432px;
+}
+.rechargeCard .menuApp .appItem#Code:hover {
+  background-position: 0 -432px;
+}
+
+/* detail-content  */
+.detail-content {
+  display: flex;
+  background: #f7eccc;
+}
+
+.detail-content .header-content {
+  margin: 5vw 0 2vw 0;
+  border-bottom: 2px solid black;
+}
+.detail-content .header-content h2 {
+  font-size: 3vw;
+  font-weight: 500;
+  margin-bottom: 1.25vw;
+  color: rgb(203, 24, 0);
+}
+
+.detail-content .header-content p{
+  font-size: 2vw;
+  margin-bottom: 1vw;
+}
+
+.detail-content .body-content{
+  margin-bottom: 3vw;
+}
+/* sideBar  */
+.sideBar .menuApp {
+  position: fixed;
+  width: 186px;
+  display: flex;
+  flex-direction: column;
+  height: 449px;
+  right: 0px;
+  bottom: 50%;
+  transform: translate(150px, 50%);
+  background: url(../img/twentyseventeen-chill.png);
+  background-position: 0 -1014px;
+  transition: transform 1s;
+  list-style: none;
+  cursor: pointer;
+  gap: 0px;
+}
+
+.menuApp li {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 8px;
+  border: 0;
+}
+
+.menuApp li a {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  background-image: url(../img/twentyseventeen-chill.png);
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  text-decoration: none;
+}
+
+.menuApp .app_mobile a {
+  width: 126px;
+  height: 50px;
+}
+
+/* .menuApp .app_mobile:hover {
+    filter: brightness(1) sepia(50%) saturate(500%) hue-rotate(5deg);
+  } */
+
+.menuApp .app_mobile .Adroid {
+  background-position: -331px -186px;
+}
+.menuApp .app_mobile .Adroid:hover {
+  background-position: -336px -268px;
+}
+
+.menuApp .app_mobile .IOS {
+  background-position: -79px -186px;
+}
+.menuApp .app_mobile .IOS:hover {
+  background-position: -172px -84px;
+}
+
+.menuApp .app_mobile .APK {
+  background-position: -252px -350px;
+}
+.menuApp .app_mobile .APK:hover {
+  background-position: -84px -268px;
+}
+
+.menuApp .app_AddCard {
+  margin-left: 47px;
+}
+
+.menuApp .app_AddCard .addCard {
+  width: 133px;
+  height: 73px;
+  background-position: 0 -538px;
+}
+.menuApp .app_AddCard .addCard:hover {
+  background-position: -133px -538px;
+}
+
+.menuApp .app_Home {
+  display: flex;
+  gap: 10px;
+}
+
+.menuApp .app_Home a {
+  width: 59px;
+  height: 44px;
+}
+.menuApp .app_Home a:hover {
+  filter: brightness(1.5);
+}
+
+.menuApp .app_Home .home {
+  background-position: -54px -84px;
+}
+.menuApp .app_Home .fanpage {
+  background-position: -419px 0;
+}
+
+.menuApp .app_Logo {
+  width: 124px;
+  height: 124px;
+  overflow: hidden;
+}
+
+.menuApp .app_Logo .customLogo {
+  text-indent: unset;
+  background: none;
+}
+
+.menuApp .app_Logo .customLogo img {
+  max-height: 115px;
+  width: 100%;
+}
+
+/* footer  */
+.footer {
+  background: #160305;
+  color: #bdbcb9;
+  border-top: solid 1px #681e19;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.footer .social-youtube {
+  display: none;
+}
+
+.footer .footer-social {
+  padding: 20px 0;
+  background: #4c1612;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .row .social {
+  margin: 0 auto;
+}
+.footer .row .social a:hover {
+  filter: brightness(1.5);
+}
+
+.footer .footer-warning {
+  padding: 30px 0 60px 0;
+}
+
+.footer .footer-warning p {
+  line-height: 1.8;
+  margin-bottom: 10px;
+  text-align: center;
+  gap: 2vw;
+  list-style: none;
+}
+
+.footer-warning p br {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1124px) {
+  /* header  */
+  .header {
+    height: 100% !important;
+    flex-direction: column;
+  }
+
+  .header .container.hide {
+    display: none;
+  }
+
+  .header .contaner-mobile {
+    display: flex;
+  }
+
+  .header .container {
+    border-top: 1px solid white;
+    padding: 1% 3%;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .header .container .item {
+    width: 100%;
+    padding: 2% 2%;
+  }
+
+  .header .container .item a {
+    font-size: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .header .contaner-mobile {
+    display: flex;
+    padding: 2% 6%;
+  }
+
+  .container {
+    padding: 0px 50px;
+    margin: 0px;
+  }
+
+  /* sector1  */
+  .sector1 {
+    width: 100%;
+  }
+  .sector1 .clear-fix .container .downLoad .headInfor .menuApp {
+    display: none;
+  }
+  .sector1 .clear-fix .container .rechargeCard {
+    display: none;
+  }
+
+  /* sector2  */
+  /* .sector2 {
+      padding: 0 5vw;
+    } */
+
+  /* footer  */
+  .footer .row .social a img {
+    width: 23vw;
+  }
+  .footer .social.social-youtube {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .container {
+    padding: 0px 5vw;
+    margin: 0px;
+  }
+  /* sector1 */
+  .sector1 .clear-fix .container .downLoad {
+    width: 100%;
+  }
+
+  /* sector2  */
+  /* .sector2 .right .pagnigation ul li .hide {
+      display: none;
+    }
+    .sector2 .right .pagnigation {
+      font-size: 5vw;
+    } */
+}

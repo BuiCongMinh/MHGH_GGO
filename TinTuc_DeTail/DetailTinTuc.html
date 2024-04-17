@@ -4,17 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Item</title>
-    <link rel="stylesheet" href="./detailItem.css">
-    <link rel="stylesheet" href="../font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css">
+    <title>detail new</title>
+    <link rel="stylesheet" href="./DetailTinTuc.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.css" />
 </head>
 
 <body>
     <div id="App">
-        <div class="header">
-            <div class="container">
+        <div class="header" id="header">
+            <div class="contaner-mobile">
+                <div class="toggle-menu">
+                    <i class="fa-solid fa-bars true active"></i>
+                    <i class="fa-solid fa-x false  "></i>
+                </div>
+                <ul class="menu-app">
+                    <li class="install-mobile app-install">
+                        <a href="../TinTuc/TinTuc.html"></a>
+                    </li>
+                    <li class="install-mobile app-paycard">
+                        <a href="../TinTuc/TinTuc.html"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="container hide">
                 <div class="item">
-                    <a href="#">
+                    <a href="../Main_page/mainPage.html">
                         <i class="fa-solid fa-house"></i>
                     </a>
                 </div>
@@ -28,14 +43,15 @@
                     <a href="../TinTuc/TinTuc.html"> Hướng Dẫn </a>
                 </div>
                 <div class="item">
-                    <a href="https://mhgh.ggo.vn/category/tin-tuc/"> Fanpage </a>
+                    <a href="https://www.facebook.com/monghuyengiangho"> Fanpage </a>
                 </div>
                 <div class="item">
-                    <a href="https://mhgh.ggo.vn/category/tin-tuc/"> Group </a>
+                    <a href="https://www.facebook.com/groups/mongdaihiep"> Group </a>
                 </div>
             </div>
-        </div>
 
+        </div>
+        
         <div class="sector1">
             <div class="clear-fix">
               <div class="container">
@@ -99,45 +115,31 @@
                 </div>
               </div>
             </div>
-        </div>
+          </div>
 
-        <div class="content">
+        <div class="detail-content">
             <div class="container">
-                
-            </div>
-        </div>
-
-        <div class="footer">
-            <div class="footer-social">
-                <div class="container">
-                    <div class="row">
-                        <div class="social">
-                            <a href="https://www.facebook.com/monghuyengiangho">
-                                <img src="../img/footer/f-btn-1.png" alt="" />
-                            </a>
-                        </div>
-                        <div class="social">
-                            <a href="https://www.facebook.com/monghuyengiangho">
-                                <img src="../img/footer/f-btn-2.png" alt="" />
-                            </a>
-                        </div>
-                    </div>
+                <div class="header-content">
+                    <h2>Title Detail Content</h2>
+                    <p>The Time</p>
+                </div>
+    
+                <div class="body-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus adipisci voluptatibus dolorem iste expedita in facere itaque deleniti quidem quos dolore, ipsam, laudantium corporis, ea ab sapiente nihil earum?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus adipisci voluptatibus dolorem iste expedita in facere itaque deleniti quidem quos dolore, ipsam, laudantium corporis, ea ab sapiente nihil earum?
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam delectus adipisci voluptatibus dolorem iste expedita in facere itaque deleniti quidem quos dolore, ipsam, laudantium corporis, ea ab sapiente nihil earum?
+                    </p>
                 </div>
             </div>
-            <div class="footer-warning">
-                <p style="text-align: center">
-                    <strong> Phát hành bởi Công ty Cổ phần GGO </strong>
-                    <br />
-                    Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số:
-                    103/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 16/3/2020
-                    <br />
-                    Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng
-                    số: 861/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 21/05/2020
-                </p>
-            </div>
+
         </div>
 
-        <button class="go-top-btn">
+        <button class="go-top-btn" onclick="scrollSmoothlyToBottom('header')">
             <i class="fa-solid fa-chevron-up"></i>
             Top
         </button>
@@ -172,13 +174,51 @@
                         <a class="fanpage" href="https://www.facebook.com/monghuyengiangho" target="_blank"></a>
                 </li>
                 <li class="app_Logo">
-                    <a class="customLogo reload" href="#">
+                    <a class="customLogo reload" href="../Main_page/mainPage.html">
                         <img src="../img/side_bar/logo.png" alt="">
                     </a>
                 </li>
             </ul>
         </div>
+
+        <div class="footer">
+            <div class="footer-social">
+                <div class="container">
+                    <div class="row">
+                        <div class="social">
+                            <a href="https://www.facebook.com/monghuyengiangho">
+                                <img src="../img/footer/f-btn-1.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/monghuyengiangho">
+                                <img src="../img/footer/f-btn-2.png" alt="" />
+                            </a>
+                        </div>
+                        <div class="social social-youtube">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCHoPbdC92G8pWVigmYrsxAg">
+                                <img src="../img/footer/f-btn-3.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-warning">
+                <p style="text-align: center">
+                    <strong> Phát hành bởi Công ty Cổ phần GGO </strong>
+                    <br />
+                    Giấy phép cung cấp dịch vụ trò chơi điện tử G1 trên mạng số:
+                    103/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 16/3/2020
+                    <br />
+                    Quyết định phê duyệt nội dung kịch bản trò chơi điện tử G1 trên mạng
+                    số: 861/QĐ-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 21/05/2020
+                </p>
+            </div>
+        </div>
     </div>
 </body>
+<script src="../jquery-2.2.4.min.js"></script>
+<script src="./DetailTinTuc.js"></script>
+<script src="./responesiveJS/mainPageReponesive.js"></script>
 
 </html>

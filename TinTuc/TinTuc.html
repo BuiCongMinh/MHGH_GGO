@@ -30,12 +30,12 @@
         </div>
 
         <div class="container hide">
-          <div class="item active">
-            <a href="#">
+          <div class="item ">
+            <a href="../Main_page/mainPage.html">
               <i class="fa-solid fa-house"></i>
             </a>
           </div>
-          <div class="item">
+          <div class="item active">
             <a href="../TinTuc/TinTuc.html"> Tin Tức </a>
           </div>
           <div class="item">
@@ -363,7 +363,10 @@
         </div>
       </div>
 
-      <button class="go-top-btn">
+      <button 
+        class="go-top-btn"
+        onclick="scrollSmoothlyToBottom('header')"
+      >
         <i class="fa-solid fa-chevron-up"></i>
         Top
       </button>
@@ -458,6 +461,7 @@
 
     </div>
   </body>
+  <script src="../jquery-2.2.4.min.js"></script>
   <script src="./TinTuc.js"></script>
   <script src="./responesiveJS/mainPageReponesive.js"></script>
 </html>
