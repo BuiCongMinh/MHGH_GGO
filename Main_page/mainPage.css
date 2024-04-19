@@ -350,15 +350,13 @@ html {
 }
 
 .sector2 .container .left .owl-carousel .owl-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-100%);
   width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 0 5px;
 }
 
-.sector2 .container .left .owl-carousel .owl-nav button {
+.sector2 .container .left .owl-carousel .owl-nav .owl-prev, .sector2 .container .left .owl-carousel .owl-nav .owl-next {
   background: url(../img/sector2/bg_direction_nav.png);
   background-repeat: no-repeat;
   width: 30px;
@@ -370,8 +368,35 @@ html {
 
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
-  -moz-transition: opacity 0.25s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out;
   transition: all 0.3s ease;
+}
+
+.sector2 .container .left .owl-carousel:hover .owl-nav .owl-prev {
+  left: 0;
+  opacity: 1;
+  margin-left: 5px;
+}
+.sector2 .container .left .owl-carousel:hover .owl-nav .owl-next {
+  right: 0;
+  opacity: 1;
+  margin-right: 5px
+}
+
+.sector2 .container .left .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -40px;
+  opacity: 0;
+  top: 50%;
+  transform: translateY(-100%);
+}
+ 
+.sector2 .container .left .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -40px;
+  opacity: 0;
+  transform: translateY(-100%);
+  top: 50%;
 }
 
 .sector2 .container .left .owl-carousel .owl-nav .owl-next {

@@ -19,17 +19,27 @@ const contents = document.querySelectorAll(".content-body");
 
 window.addEventListener("scroll", checkHeight);
 
+// /BlackBerry/i,
+// /Windows Phone/i
+const isMobile = navigator.userAgent;
+console.log("sadasdasd", isMobile)
+function isMobileDevice() {
+  return /Mobi/i.test(navigator.userAgent) && !/iPad/i.test(navigator.userAgent);
+}
+
 function checkHeight() {
-  if (window.scrollY > 400) {
-    goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
-    sideBar.style.transform = "translateY(50%)";
-    sideBar.style.backgroundPosition = "-186px -1014px";
-    sideBar.classList.add("show");
-  } else {
-    sideBar.style.transform = "translateY(50%) translateX(150px)";
-    sideBar.style.backgroundPosition = "0 -1014px";
-    sideBar.classList.remove("show");
-    goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
+  if (!isMobileDevice()) {
+    if (window.scrollY > 400) {
+      goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
+      sideBar.style.transform = "translateY(50%)";
+      sideBar.style.backgroundPosition = "-186px -1014px";
+      sideBar.classList.add("show");
+    } else {
+      sideBar.style.transform = "translateY(50%) translateX(150px)";
+      sideBar.style.backgroundPosition = "0 -1014px";
+      sideBar.classList.remove("show");
+      goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
+    }
   }
 }
 
