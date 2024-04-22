@@ -578,6 +578,35 @@ html {
 }
 
 @media screen and (max-width: 769px) {
+  .header {
+    height: 100% !important;
+    flex-direction: column;
+  }
+
+  .header .container.hide {
+    display: none;
+  }
+  .header .container {
+    border-top: 1px solid white;
+    padding: 1% 3%;
+    flex-direction: column;
+    gap: 1.5vh;
+  }
+
+  .header .container .item {
+    width: 100%;
+    padding: 2% 2%;
+  }
+
+  .header .container .item a {
+    font-size: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .header .contaner-mobile {
+    display: flex;
+  }
+
   .container {
     padding: 0px 5vw;
     margin: 0px;
@@ -586,12 +615,4 @@ html {
   .sector1 .clear-fix .container .downLoad {
     width: 100%;
   }
-
-  /* sector2  */
-  /* .sector2 .right .pagnigation ul li .hide {
-      display: none;
-    }
-    .sector2 .right .pagnigation {
-      font-size: 5vw;
-    } */
 }

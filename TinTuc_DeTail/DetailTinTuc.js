@@ -3,7 +3,8 @@ const goTopBtn = document.querySelector(".go-top-btn");
 const itemTitles = document.querySelectorAll(".item_title");
 const contents = document.querySelectorAll(".content-body");
 
-console.log(12);
+console.log(itemTitles);
+
 // scrolling smooth button
 const scrollSmoothlyToBottom = (to) => {
   $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 1000);
@@ -39,6 +40,7 @@ sideBar.addEventListener("click", () => {
 });
 
 itemTitles.forEach((itemTitle, index) => {
+  console.log(12);
   itemTitle.addEventListener("click", () => {
     document.querySelector(".sector2  .right .title .active")?.classList.remove("active");
     itemTitle.classList.add("active");
