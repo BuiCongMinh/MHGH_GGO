@@ -77,6 +77,10 @@ html {
   color: #f6e29e;
   text-decoration: none;
 }
+.header .container .item:first-child a i {
+  font-size: 30px;
+}
+
 .header .contaner-mobile {
   display: none;
   width: 100%;

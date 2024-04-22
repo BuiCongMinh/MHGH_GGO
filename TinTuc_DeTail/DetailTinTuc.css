@@ -52,6 +52,13 @@ html {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all .3s;
+}
+
+.header .container .item:first-child:hover {
+  background: transparent;
+  filter: brightness(1.5);
+  color: #fff;
 }
 
 .header .container .item:hover {
@@ -64,6 +71,13 @@ html {
   background: orange;
   filter: brightness(110%);
   color: #fffffffd;
+}
+
+
+
+.header .container .item a i {
+  margin-right: 5px;
+  font-size: 30px;
 }
 
 .header .container .item a {
@@ -541,7 +555,7 @@ html {
     font-size: 1.5rem;
     justify-content: flex-start;
   }
-
+ 
   .header .contaner-mobile {
     display: flex;
     padding: 2% 6%;

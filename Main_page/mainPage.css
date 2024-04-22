@@ -78,6 +78,10 @@ html {
   text-decoration: none;
 }
 
+.header .container .item a i{
+  font-size: 30px;
+}
+
 .header .contaner-mobile {
   display: none;
   width: 100%;
