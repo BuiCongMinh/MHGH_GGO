@@ -1,6 +1,6 @@
 // scrolling smooth button
 const scrollSmoothlyToBottom = (to) => {
-  $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 1000);
+  $("html, body").animate({ scrollTop: $(`#${to}`).offset().top }, 500);
 };
 
 // owl caruosel libarry
@@ -18,19 +18,31 @@ const itemTitles = document.querySelectorAll(".item_title");
 const contents = document.querySelectorAll(".content-body");
 
 window.addEventListener("scroll", checkHeight);
+window.addEventListener("scroll", checkHeightBtnOntop);
 
 // /BlackBerry/i,
 // /Windows Phone/i
 const isMobile = navigator.userAgent;
-console.log("sadasdasd", isMobile)
 function isMobileDevice() {
-  return /Mobi/i.test(navigator.userAgent) && !/iPad/i.test(navigator.userAgent);
+  return (
+    /Mobi/i.test(navigator.userAgent) && !/iPad/i.test(navigator.userAgent)
+  );
 }
 
+//check height btn-ontop:
+function checkHeightBtnOntop() {
+  if (window.scrollY > 400) {
+    goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
+  } else {
+    goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
+  }
+}
+
+//func check height
 function checkHeight() {
   if (!isMobileDevice()) {
     if (window.scrollY > 400) {
-      goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
+      // goTopBtn.style.transform = "translateY(0px) translateX(-50%)";
       sideBar.style.transform = "translateY(50%)";
       sideBar.style.backgroundPosition = "-186px -1014px";
       sideBar.classList.add("show");
@@ -38,7 +50,7 @@ function checkHeight() {
       sideBar.style.transform = "translateY(50%) translateX(150px)";
       sideBar.style.backgroundPosition = "0 -1014px";
       sideBar.classList.remove("show");
-      goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
+      // goTopBtn.style.transform = "translateY(100px) translateX(-50%)";
     }
   }
 }
@@ -94,11 +106,11 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-itemContents.forEach(i=>{
-  i.addEventListener('click',()=>{
-    window.location.href = '../TinTuc_DeTail/DetailTinTuc.html';
-  })
-})
+itemContents.forEach((i) => {
+  i.addEventListener("click", () => {
+    window.location.href = "../TinTuc_DeTail/DetailTinTuc.html";
+  });
+});
 
 //Event change page
 const changePage = (url) => {
