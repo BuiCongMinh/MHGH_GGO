@@ -328,19 +328,22 @@ html {
   border-bottom: 0.5px solid #868686;
 }
 .detail-content .header-content h2 {
-  font-size: 3vw;
-  font-weight: 500;
   margin-bottom: 1.25vw;
   color: rgb(203, 24, 0);
+  text-transform: uppercase;
 }
 
 .detail-content .header-content p {
   font-size: 20px;
   color: #868686;
+  text-transform: capitalize;
 }
 
 .detail-content .body-content {
   margin-bottom: 3vw;
+}
+.detail-content .body-content p {
+  text-transform: capitalize;
 }
 
 /* sideBar  */
